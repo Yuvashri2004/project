@@ -190,6 +190,68 @@ section#about p {
     
 }
 
+
+#skills {
+    padding: 4rem 2rem;
+    background-color: #363636;
+    margin-bottom: 1rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+#skills h2 {
+    font-size: 2.5rem;
+    color: #c8c3c3;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.skills-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.skills-list {
+    width: 100%;
+}
+
+.skill {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.skill span {
+    width: 150px;
+    font-size: 1.2rem;
+    color: #c8c3c3;
+}
+
+.skill-bar {
+    flex-grow: 1;
+    background-color: #e0e0e0;
+    border-radius: 5px;
+    overflow: hidden;
+    height: 25px;
+    margin-left: 10px;
+    position: relative;
+}
+
+.skill-level {
+    height: 100%;
+    width: 0%;
+    transition: width 0.5s ease-in-out;
+}
+
+.html { width: 90%; background-color: #29f147; } 
+.css { width: 80%; background-color: #002f9c; }  
+.js { width: 85%; background-color: #be06c7; } 
+.react { width: 75%; background-color: #ff0000; }
+.node { width: 70%; background-color: #64149c; } 
+.python { width: 65%; background-color: #306998; }
+
+
 form {
     display: flex;
     flex-direction: column;
@@ -331,7 +393,7 @@ footer .social-links a:hover {
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#projects">Projects</a></li>
-                <li><a href="#education">Skills</a></li>
+                <li><a href="#skills">Skills</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
@@ -339,13 +401,14 @@ footer .social-links a:hover {
     <section id="home">
         <div class="intro">
             <div class="intro-text">
-                <h1>YuvaShri</h1>
-                <p>I am a software engineer with a passion for coding and technology, I am dedicated to mastering the art of software development. With a solid foundation in Java programming, I am continually seeking opportunities to expand my knowledge and skills in the field.</p>
+                <h1>I'm YuvaShri</h1>
+                <h2><span class="highlight">JAVA Developer</span></h2>
+                <p>As an aspiring Java developer with a passion for coding and technology, I am dedicated to mastering the art of software development. With a solid foundation in Java programming, I am continually seeking opportunities to expand my knowledge and skills in the field.</p>
                 <a href="#contact" class="button">Get in Touch</a>
             </div>
             <div class="intro-image">
                 <a href="C:\Users\byuva\OneDrive\Desktop\github\portfolio\Resume\Yuva resume.pdf">
-                <img src="C:\Users\byuva\OneDrive\Desktop\github\portfolio\image\profile.jpeg" alt="Yuvashri's Photo"></a>
+                <img src="portfolio\Resume\profile.jpeg" alt="Yuvashri's Photo"></a>
             </div>
         </div>
     </section>
@@ -365,14 +428,14 @@ footer .social-links a:hover {
                 <p><strong>Team Members:</strong> Sri Ishwarya, Yuvashri</p>
             </div>
             <div class="project-image">
-                <img src="portfolio\Resume\project.jpeg" alt="Fire Fighting Robot">
+                <img src="C:\Users\byuva\OneDrive\Desktop\github\portfolio\image\project.jpeg" alt="Fire Fighting Robot">
             </div>
         </div>
     </section>
-    <section id="Education">
-        <h2><u>EDUCATION QUALIFICATION</u></h2>
+    <section>
+        <h2>EDUCATION QUALIFICATION</h2>
         <form>
-        <table border="1px">
+        <table border="1px" >
             <tr>
                 <th>S.NO</th>
                 <th>Education</th>
@@ -398,7 +461,6 @@ footer .social-links a:hover {
                 <td><label>2022</label></td>
             </tr>
         </table>
-        </form>
     </section>  
     <section id="contact">
         <h2>Contact</h2>
@@ -423,6 +485,7 @@ footer .social-links a:hover {
         <div class="social-links">
             <a href="https://github.com/Yuvashri2004" target="_blank">GitHub</a>
             <a href="https://www.linkedin.com/in/yuvashri-b-2086ab255" target="_blank">LinkedIn</a>
+            <a href="https://www.instagram.com/yuvi__1404" target="_blank">Instagram</a>
         </div>
     </footer>
 </body>
