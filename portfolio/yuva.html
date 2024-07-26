@@ -1,48 +1,122 @@
-<!DOCTYPE html>
 <html>
-    <head>
-        <style>
-            .ss{
-                height: 10px;
-                display: flex;
-                background-color: rgb(248, 28, 237);
-                flex-direction: row;
-                justify-content: space-evenly;
-                padding: 2rem;
-                color: rgb(3, 12, 12);
-                /*display: inline-block;*/
-            }
-           ul{
-            display: flex;
-            list-style-type: none;
-           }
-           li{
-            padding-right: 20px;
-           }
-          a{
-            text-decoration: none;
-            color:black;
-          }
-          li:hover{
-            background-color: black;
-          }
-        </style>
-
-    </head>
-    <body>
+<head>
+    <title>Yuvashri Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
         <nav>
-        <div class="ss">
-            <h3 style="padding-right:400px;">LOGO</h3>
-        <ul>
-            <li class="li"><a href="index.html">Home</a></li>
-            <li class="li"><a href="#Education>">Education</a></li>
-            <li class="li">About</li>
-            <li class="li">Skills</li>
-            <li class="li">Achievement</li>
-            <li class="li">Contact me</li>
-        </ul>
-        </div>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
         </nav>
-        <h1 name='Education'>Education</h1>
-    </body>
+    </header>
+    <section id="home">
+        <div class="intro">
+            <div class="intro-text">
+                <h1>I'm YuvaShri</h1>
+                <h2><span class="highlight">JAVA Developer</span></h2>
+                <p>As an aspiring Java developer with a passion for coding and technology, I am dedicated to mastering the art of software development. With a solid foundation in Java programming, I am continually seeking opportunities to expand my knowledge and skills in the field.</p>
+                <a href="#contact" class="button">Get in Touch</a>
+            </div>
+            <div class="intro-image">
+                <a href="C:\Users\byuva\OneDrive\Desktop\github\portfolio\Resume\Yuva resume.pdf">
+                <img src="C:\Users\byuva\OneDrive\Desktop\github\portfolio\image\profile.jpeg" alt="Yuvashri's Photo"></a>
+            </div>
+        </div>
+    </section>
+    <section id="about">
+        <h2>About Me</h2>
+        <p>I embarked on my journey as a Java developer with a strong interest in creating efficient, scalable, and robust applications. My experience includes working with core Java concepts, object-oriented programming principles, and various frameworks such as Spring and Hibernate. I have built and contributed to projects that have honed my problem-solving skills and deepened my understanding of the software development lifecycle.
+            <br />
+            <br />
+            I am driven by the challenge of solving complex problems and the thrill of seeing my code come to life. My goal is to leverage my Java skills to build innovative solutions that make a positive impact. I am eager to learn new technologies, explore emerging trends, and continuously improve my coding practices.</p>
+    </section>
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="project">
+            <div class="project-text">
+                <h3><strong>Fire Fighting Robot</strong></h3>
+                <p>This autonomous rover is designed to detect and extinguish fires efficiently. Equipped with advanced sensors and a precise navigation system, the Fire Fighting Robot autonomously navigates through various terrains to locate fire sources. Once a fire is detected, it activates a water-spraying mechanism to put out the flames effectively.</p>
+                <p><strong>Team Members:</strong> Sri Ishwarya, Yuvashri</p>
+            </div>
+            <div class="project-image">
+                <img src="C:\Users\byuva\OneDrive\Desktop\github\portfolio\image\project.jpeg" alt="Fire Fighting Robot">
+            </div>
+        </div>
+    </section>
+    <section id="skills">
+        <h2>Skills</h2>
+        <div class="skills-container">
+            <div class="skills-list">
+                <div class="skill">
+                    <span>HTML</span>
+                    <div class="skill-bar">
+                        <div class="skill-level html"></div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <span>CSS</span>
+                    <div class="skill-bar">
+                        <div class="skill-level css"></div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <span>JavaScript</span>
+                    <div class="skill-bar">
+                        <div class="skill-level js"></div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <span>JAVA</span>
+                    <div class="skill-bar">
+                        <div class="skill-level react"></div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <span>C/C++</span>
+                    <div class="skill-bar">
+                        <div class="skill-level node"></div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <span>Python</span>
+                    <div class="skill-bar">
+                        <div class="skill-level python"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>    
+    <section id="contact">
+        <h2>Contact</h2>
+        <form>
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+            </div>
+            <button type="submit">Send</button>
+        </form>
+    </section>
+    <footer>
+        <p>&copy; 2024 Yuvashri</p>
+        <div class="social-links">
+            <a href="https://github.com/Yuvashri2004" target="_blank">GitHub</a>
+            <a href="https://www.linkedin.com/in/yuvashri-b-2086ab255" target="_blank">LinkedIn</a>
+            <a href="https://www.instagram.com/yuvi__1404" target="_blank">Instagram</a>
+        </div>
+    </footer>
+</body>
 </html>
